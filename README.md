@@ -25,6 +25,8 @@ mongoimport --type json -d uk_food -c establishments --drop --jsonArray establis
 
 The import command is also contained at the beginning of the NoSQL_setup notebook.   The import should be run in the Resources sub-folder containing the json file.
 
+The json file does not show a different timestamp or size after the number of updates we did.  Adding it with git add -f did not work.  Therefore, after the initial establishments.json had been added to the repository at the beginning of the project, it was deleted from the repository and the updated file added after all of the work was complete. 
+
 Both jupyter notebooks are based on starter code provided, which was mostly detailed comments, with almost no code being included.   Those comments are included in the delivered code.   Many additional comments were added, both in markdown cells and in code blocks.  The one exception, other than opening database boilerplate, where code for updating a field was provided, is noted in comments in the cell.
 
 The challenge requirements include some specific methods for how certain operations, such as converting strings to integers and floats, should be done.   There are several markdown cells in each notebook commenting on these methods, and the use of other possile methods in a production environment for better error handling and information retention.
